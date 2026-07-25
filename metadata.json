@@ -1,0 +1,6 @@
+{
+  "name": "Enterprise Banking Operations & Strategy Portal",
+  "description": "Enterprise-grade internal banking operations portal for bank employees featuring Accounts management with e-KYC validation, Loan Management with EMI schedules, Customer Service Hub with ReachBack follow-ups, Operations Analytics, Branch Performance with business insights, and fixed sidebar navigation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
