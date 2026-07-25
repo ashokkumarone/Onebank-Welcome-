@@ -98,13 +98,13 @@ export const TopBar: React.FC<TopBarProps> = ({
             className="relative flex items-center space-x-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 px-3 py-2 rounded-xl border border-slate-200 text-xs font-semibold transition-colors hover:border-sky-500/50"
             title="My Successful Business & Completed Work"
           >
-            <CheckSquare className="w-4 h-4 text-sky-600" />
+            <div className="relative flex items-center justify-center">
+              <CheckSquare className="w-4 h-4 text-sky-600" />
+              {completedSuccessCount > 0 && (
+                <span className="absolute -top-1 -right-1.5 w-2.5 h-2.5 bg-emerald-500 rounded-full ring-2 ring-white shadow-xs" />
+              )}
+            </div>
             <span className="hidden md:inline">My Tasks</span>
-            {completedSuccessCount > 0 && (
-              <span className="ml-1 bg-sky-600 text-white font-bold px-1.5 py-0.2 text-[10px] rounded-full font-mono">
-                {completedSuccessCount}
-              </span>
-            )}
           </button>
 
           {/* Notifications */}
@@ -114,13 +114,13 @@ export const TopBar: React.FC<TopBarProps> = ({
             className="relative flex items-center space-x-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 px-3 py-2 rounded-xl border border-slate-200 text-xs font-semibold transition-colors hover:border-sky-500/50"
             title="Internal Memos, Circulars & Branch Notifications"
           >
-            <Bell className="w-4 h-4 text-sky-600" />
+            <div className="relative flex items-center justify-center">
+              <Bell className="w-4 h-4 text-sky-600" />
+              {unreadMessagesCount > 0 && (
+                <span className="absolute -top-1 -right-1.5 w-2.5 h-2.5 bg-emerald-500 rounded-full ring-2 ring-white shadow-xs" />
+              )}
+            </div>
             <span className="hidden md:inline">Notifications</span>
-            {unreadMessagesCount > 0 && (
-              <span className="ml-1 bg-sky-600 text-white font-bold px-1.5 py-0.2 text-[10px] rounded-full font-mono">
-                {unreadMessagesCount}
-              </span>
-            )}
           </button>
         </div>
       </div>
