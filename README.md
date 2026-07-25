@@ -29,4 +29,4 @@ This is a front-end concept/prototype built to demonstrate product thinking and 
 
 ## Live Demo
 
-_(link to be added once deployed)_
+[https://ashokkumarone.github.io/OneBank/](https://ashokkumarone.github.io/OneBank/)
